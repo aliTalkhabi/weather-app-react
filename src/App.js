@@ -3,7 +3,6 @@ import TopButton from "./components/TopButton";
 import Input from "./components/Input";
 import TimeAndLocation from "./components/TimeAndLocation";
 import TempratureAndDetails from "./components/TempratureAndDetails";
-import Forecast from "./components/Forecast";
 
 import getFormattedWeatherData from "./components/services/weatherServices";
 import { useEffect, useState } from "react";
