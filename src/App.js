@@ -17,7 +17,7 @@ function App() {
   useEffect(() => {
     const fetchWeather = async () => {
       const message = query.q ? query.q : "current location";
-      toast.info("Fetching weather for" + message);
+      toast.info("Fetching weather for " + message);
       await getFormattedWeatherData({ ...query, units }).then((data) => {
         toast.success(
           `Successfully fetched weather for ${data.name},${data.country} .`
@@ -48,7 +48,7 @@ function App() {
             <Forecast title="daily forecast" items={weather} /> */}
           </div>
         )}
-        <ToastContainer autoClose={5000} theme="colorred" newestOnTop={true} />
+        <ToastContainer autoClose={5000} theme="colored" newestOnTop={true} />
       </div>
     </>
   );
